@@ -1,0 +1,230 @@
+
+.about {
+
+    &__photo {
+    background: url('../../images/Team.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 114px;
+    position: relative;
+
+    @media (min-width: $breakpoint-md) {
+        margin: 60px 0;
+        height: 234px;
+    }
+    @media (min-width: $breakpoint-lg) {
+        height: 312px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        height: 438px;
+    }
+    @media (min-width: $breakpoint-xxl) {
+        height: 584px;
+    }
+    }
+    &__photo--text {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        letter-spacing: 13px;
+        opacity: 80%;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);   
+        
+        @media (min-width: $breakpoint-md) {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+        }
+        @media (min-width: $breakpoint-lg) {
+            font-size: 86px;
+            line-height: 105px;
+            letter-spacing: 63px;
+        }
+        @media (min-width: $breakpoint-xl) {
+            font-size: 96px;
+            line-height: 117px;
+            letter-spacing: 63px;
+        }
+        
+    }
+
+
+
+    &__main {
+        margin: 30px 0 60px;
+
+        @media (min-width: $breakpoint-md) {
+            margin: 60px 0;
+        }
+
+        
+    }
+
+    &__main--block {
+        @media (min-width: $breakpoint-lg) {
+            display: flex;  
+        }
+    }
+
+    &__main--text--sec {
+        @media (min-width: $breakpoint-lg) {
+            flex: 1 1 60%;
+            padding-right: 30px;
+        }
+        
+    }
+
+    &__main--text {
+        font-size: 19px;
+        line-height: 30px;
+        color: #000;
+        margin-bottom: 30px;
+
+        @media (min-width: $breakpoint-lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__main--title--sec {
+        @media (min-width: $breakpoint-lg) {
+            padding-left: 30px;
+            flex: 1 1 40%;  
+        }
+        
+    }
+
+    &__main--title {
+        @include gradient-text;
+        @include title-text;
+
+        @media (min-width: $breakpoint-md) {
+            font-size: 38px;
+            line-height: 46px;
+          }
+    }
+}
+.team {
+
+ &__logo {
+    position: relative;
+    background: $grey-color;
+    padding: 30px 30px 90px;  
+    @media (min-width: $breakpoint-md) {
+      padding: 60px 30px 90px;  
+    }
+}
+
+&__title--logo {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $main-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+&__slide--logo {
+   
+}
+
+&__block-logo {
+    display: block;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    @media (min-width: $breakpoint-lg) {
+        height: 110px;
+    }
+
+} 
+
+
+&__slide--logo-first {
+    background: url(../../images/team_Achievment-1.png) no-repeat 50%/54px 40px, $white;
+    
+        @media (min-width: $breakpoint-lg) {
+            background-size: 80px 60px;
+        }
+}
+
+
+
+&__slide--logo-sec {
+    background: url(../../images/team_Achievment-2.png) no-repeat 50%/106px 40px, $white;
+    
+        @media (min-width: $breakpoint-lg) {
+            background-size: 159px 60px;
+        }
+}
+
+
+&__slide--logo-third {
+    background: url(../../images/team_Achievment-3.png) no-repeat 50%/130px 40px, $white;
+    
+        @media (min-width: $breakpoint-lg) {
+            background-size: 195px 60px;
+        }
+}
+
+
+
+&__slide--log-fourth {
+    background: url(../../images/team_Achievment-4.png) no-repeat 50%/110px 40px, $white;
+    
+        @media (min-width: $breakpoint-lg) {
+            background-size: 166px 60px;
+        }
+}
+
+
+&__slide--logo-fifth {
+    background: url(../../images/team_Achievment-3.png) no-repeat 50%/130px 40px, $white;
+    
+        @media (min-width: $breakpoint-lg) {
+            background-size: 195px 60px;
+        }
+}
+
+  
+
+
+&__pagination--comp {
+    padding-bottom: 20px;
+    
+    .swiper-pagination {
+      bottom: 0;
+    }
+  
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+      &.swiper-pagination-bullet-active {
+        background: $regular-color;
+      }
+    }
+    
+  }
+}
+
+  
+  .swiper__team {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+  }

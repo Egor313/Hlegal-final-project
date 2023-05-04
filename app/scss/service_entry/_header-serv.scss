@@ -1,0 +1,148 @@
+.header {
+
+    &__services {
+        background: transparent;
+    }
+
+    &__head--services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &__logo--services {
+        @media (min-width: $breakpoint-md) {
+            
+            margin-bottom: 30px;
+           span {
+               display: inline-block;
+               margin: -12px 4px 0 8px;
+               font-size: 50px;
+               line-height: 60px;
+               font-weight: 600;
+               
+           }
+           span + span {
+               display: inline-block;
+               margin: -15px 0 0;
+               font-size: 36px;
+               line-height: 44px;
+               font-weight: 400;
+               
+           }
+       }
+    }
+
+    &__inner--serv {
+        margin: 40px 0 30px;
+        align-items: center;
+        text-align: center;
+
+        @media (min-width: $breakpoint-md) {
+            margin: 60px 0;
+        }
+    }
+
+    &__inner--serv--title {
+        @include gradient-text;
+        @include title-text;
+        margin-top: 28px;
+        
+      
+        @media (min-width: $breakpoint-md) {
+          font-size: 38px;
+          line-height: 46px;
+        }
+    }
+
+    &__inner--serv--text {
+        margin: 28px 0;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    &__inner--serv--button {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $white;
+        background: $regular-color;
+        padding: 18px 30px;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        &__inner--serv--button a {
+            display: block;
+        }
+        
+
+    }
+   
+    &__serv--area {
+        border-top: 4px solid rgba(255, 255, 255, 0.5);
+        padding-top: 30px;
+    }
+
+    &__serv--area--title {
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+
+    &__serv--area-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+
+        
+    }
+
+    &__serv--area--item {
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+        position: relative;
+        padding-left: 15px;
+        
+
+        @media (min-width: $breakpoint-md) {
+            flex: 1 1 45%;
+        }
+
+       
+    }
+
+    &__serv--area--item::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 0;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background: $accent-color;
+
+        
+    }
+
+    &__serv--container {
+        @media (min-width: $breakpoint-xl) {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        @media (min-width: $breakpoint-xxl) {
+            max-width: 1360px;
+        }
+    }
+
+}

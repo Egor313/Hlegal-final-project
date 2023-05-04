@@ -1,0 +1,111 @@
+.clients {
+    margin-top: 40px;
+    @media (min-width: $breakpoint-xxl) {
+        
+    }
+}
+.clients__container {
+    width: 100%;
+    @media (min-width: $breakpoint-xxl) {
+        // 
+       
+    }
+}
+.clients__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clients__block {
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media (min-width: $breakpoint-xxl) {
+        max-width: 1720px;
+        margin: 0 auto 60px;
+        border-radius: 12px;
+        overflow: hidden;
+        
+    }
+}
+.clients__block-logo {
+    display: block;
+    flex: 1 1 100%;
+    height: 120px;
+    &:nth-child(1) {
+        background: url(../images/clients_logo/hillel.png) no-repeat 50%/217px 48px, #1C4280;
+        
+    }
+    &:nth-child(2) {
+        background: url(../images/clients_logo/wannabiz.png) no-repeat 50%/199px 32px, #143646;
+        
+    }
+    &:nth-child(3) {
+        background: url(../images/clients_logo/tapgerine.png) no-repeat 50%/179px 44px, #F48B30;
+        
+    }
+    &:nth-child(4) {
+        background: url(../images/clients_logo/3dlook.png) no-repeat 50%/180px 42px, #9E4DC3;
+        
+    }
+    &:nth-child(5) {
+        background: url(../images/clients_logo/orangear.png) no-repeat 50%/174px 44px, #FD9339;
+        
+    }
+    &:nth-child(6) {
+        background: url(../images/clients_logo/adtelligent.png) no-repeat 50%/187px 48px, #E2E2E4;
+        
+    }
+    &:nth-child(7) {
+        background: url(../images/clients_logo/clickky.png) no-repeat 50%/138px 61px, #C71C36;
+        
+    }
+    &:nth-child(8) {
+        background: url(../images/clients_logo/eco-leasing.png) no-repeat 50%/146px 76px, #DCF3F9;
+        
+    }
+    &:nth-child(9) {
+        background: url(../images/clients_logo/ingratek.png) no-repeat 50%/182px 60px, #EAEAEA;
+        
+    }
+    &:nth-child(10) {
+        background: url(../images/clients_logo/city-par.png) no-repeat 50%/181px 38px, #282240;
+        
+    }
+    &:nth-child(11) {
+        background: url(../images/clients_logo/artprint.png) no-repeat 50%/189px 46px, #1D4568;
+        
+    }
+    &:nth-child(12) {
+        background: url(../images/clients_logo/ultimatecard.png) no-repeat 50%/152px 95px, #000000;
+        
+    }
+    @media (min-width: $breakpoint-md) {
+        flex: 1 1 33%;
+        
+    }
+    @media (min-width: $breakpoint-lg) {
+        flex: 1 1 25%;
+    }
+    @media (min-width: $breakpoint-xl) {
+        
+    }
+    @media (min-width: $breakpoint-xxl) {
+        
+    }
+    
+}
+
+.logo__visible {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    @media (min-width: $breakpoint-md) {
+        display: block;
+        opacity: 1;
+        z-index: 0;
+    }
+}

@@ -3,6 +3,43 @@
 @import 'vars';
 @import 'global';
 @import 'header';
+@import 'experience';
+@import 'cards';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import 'team';
+@import 'clients';
+@import 'recomand';
+@import 'footer';
+
+// Service entry
+@import './service_entry/header-serv';
+@import './service_entry/recomand-serv';
+@import './service_entry/footer-serv';
+
+// Services
+@import './services/main-services';
+
+// Publication entry
+@import './publication_entry/header-publication';
+@import './publication_entry/main_block_public';
+
+// Publications
+@import './publications/pubications';
+
+// Contacts
+@import './contact/contacts-main';
+
+// About us
+@import './about_us/header--about_us';
+@import './about_us/main--about';
+
+// Team
+@import './team/team--main';
+
+// Team_entry
+@import './team_entry/team_entry.scss';
+
 
 
 body {

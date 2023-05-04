@@ -1,27 +1,72 @@
-.cards__section {
+.hidden {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    
 }
-.cards__container {
 
-}
-.cards__section-title {
 
+.cards__section-link-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
 }
 .cards__section-link {
+    text-decoration: none;    
     display: block;
+    font-size: 14px;
+    line-height: 17px;
     font-weight: 700;
     color: $regular-color;
+    margin-right: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .cards__section-title-main {
-    font-size: 38px;
-    line-height: 46px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 700;
-    color: $gradient-red;
+    margin-bottom: 30px;
+    @include gradient-text;
+    
+    @media (min-width: $breakpoint-md) {
+        font-size: 38px;
+        line-height: 46px;
+        margin-bottom: 60px;
+    }
+
 }
 .cards__section-card-block {
+         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    @media (min-width: $breakpoint-md) {
+        
+        gap: 60px;
+       
+    }
+   
 }
 .cards__section-card {
+    
+    flex: 1 1 100%;
+    @media (min-width: $breakpoint-md) {
+    flex: 1 1 40%;
+    
+}
+    @media (min-width: $breakpoint-lg) {
+    flex: 1 1 27%;
+    
+}
+
 }
 .cards__section-card-title {
+    @include card-title;
 }
 .cards__section-card-text {
+    color: $white;
 }

@@ -1,0 +1,264 @@
+
+
+.main-section {
+    margin: 30px 0;
+    
+        @media (min-width: $breakpoint-md) {
+            margin: 60px 0 80px;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            
+        }
+}
+
+
+
+.team {
+
+		
+    
+        &__entry--first {
+
+            @media (min-width: $breakpoint-md) {
+                grid-area: photo;
+                justify-self: stretch;
+                align-self: initial;
+            }
+            @media (min-width: $breakpoint-lg) {
+                
+            }
+		}
+
+		&__entry--img {
+            display: block;
+        
+
+            @media (min-width: $breakpoint-md) {
+                height: 400px;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+		}
+
+		&__entry--second {
+
+            @media (min-width: $breakpoint-md) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                grid-area: title;
+                justify-self: stretch;
+                align-self: stretch;
+                
+            }
+            @media (min-width: $breakpoint-lg) {
+                align-self: start;
+                
+            }
+		}
+
+		&__entry--title {
+            @include gradient-text;
+            font-size: 38px;
+            line-height: 46px;
+            font-weight: 700;
+            margin-top: 30px;
+            @media (min-width: $breakpoint-md) {
+                margin-top: 0;
+            }
+		}
+
+		&__entry--links {
+            margin: 15px 0 30px 0;
+            display: flex;
+            flex-direction: column;
+            
+            
+            @media (min-width: $breakpoint-md) {
+                margin: 15px 0 0;
+                
+            }
+            @media (min-width: $breakpoint-xl) {
+                flex-direction: row;
+                align-items: center;
+                
+                
+            }
+		}
+
+		&__entry--links--text {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+            color: $grey-color-text;
+
+            @media (min-width: $breakpoint-xl) {
+             position: relative;
+             margin-right: 26px;
+              &::before {
+            @media (min-width: $breakpoint-xl) {
+                content: "";
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                right: -16px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                pointer-events: none;
+                background: #e6e6f0;
+            } 
+            }
+            
+           
+        }
+		}
+
+		&__entry--links--mail {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: $regular-color;
+            text-decoration: none;
+            margin-top: 10px;
+            position: relative;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                right: -16px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                pointer-events: none;
+                background: #e6e6f0;
+            }
+
+           @media (min-width: $breakpoint-md) {
+                
+            }
+            @media (min-width: $breakpoint-xl) {
+                margin-top: 0;
+                margin-right: 26px;
+            }
+		}
+
+		&__entry--links--lk {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: $regular-color;
+            text-decoration: none;
+            margin-top: 10px;
+            & a {
+                display: block;
+            }
+
+            @media (min-width: $breakpoint-md) {
+               
+            }
+            @media (min-width: $breakpoint-xl) {
+                margin-top: 0;
+            }
+		}
+
+
+        // &__entry--bottom-block {
+        //     @media (min-width: $breakpoint-lg) {
+        //         display: flex;
+        //         flex-wrap: wrap;
+        //     }
+        // }
+
+       
+
+		&__entry--third {
+            border-top: 4px solid $grey-separator-color;
+            padding-top: 30px;
+
+            @media (min-width: $breakpoint-md) {
+                grid-area: text;
+                justify-self: stretch;
+                align-self: stretch;  
+                
+            }
+		}
+
+		&__entry--third--text {
+            font-size: 16px;
+            line-height: 26px;
+            color: #000;
+		}
+
+		&__entry--third--title {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: $main-color;
+            margin: 30px 0 15px 0;
+		}
+}
+
+.container__team--entry {
+    @media (min-width: $breakpoint-md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        grid-template-areas:
+        " photo title"
+        " text text";
+
+    }
+    @media (min-width: $breakpoint-lg) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  1fr;
+        column-gap: 60px;
+        row-gap: 30px;
+        grid-template-areas:
+        " photo title title"
+        " photo text text";
+
+    }
+}
+
+
+
+// Alternative point ::before on span
+
+// .points {
+
+//     width: 0;
+//     height: 0;
+//     z-index: -1;
+//     @media (min-width: $breakpoint-xl) {
+//         position: relative;
+//          &::before {
+//        @media (min-width: $breakpoint-xl) {
+//            content: "";
+//            position: absolute;
+//            top: 50%;
+//            -webkit-transform: translate(0, -50%);
+//            transform: translate(0, -50%);
+//            right: 10px;
+//            width: 6px;
+//            height: 6px;
+//            border-radius: 50%;
+//            pointer-events: none;
+//            background: #e6e6f0;
+//        } 
+//        }
+       
+// }
+// }

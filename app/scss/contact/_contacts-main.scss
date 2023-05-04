@@ -1,0 +1,272 @@
+.main {
+   
+
+    &__block--contacts {
+        
+        margin-bottom: 30px;
+        
+        
+        @media (min-width: $breakpoint-md) {
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            
+        }
+
+
+    }
+
+    &__contacts--block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin: 40px 0 30px;
+
+        @media (min-width: $breakpoint-md) {
+            margin: 60px 0;
+        }
+        @media (min-width: $breakpoint-lg) {
+            flex: 0 0 50%;
+            padding-right: 30px;
+        }
+    }
+
+    &__contacts--first {
+        
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 400;
+        color: $main-color;
+        border-bottom: 4px solid $grey-separator-color;
+        width: 100%;
+        
+        
+    }
+    &__contacts--adress {
+        margin-bottom: 30px;
+    }
+    &__contacts--second {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-top: 30px;
+        border-bottom: 4px solid $grey-separator-color;
+        width: 100%;
+    }
+
+    &__contacts--phone {
+        font-size: 21px;
+        line-height: 30px;
+        color: $alt-color;
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+
+    &__contacts--mail {
+        font-size: 21px;
+        line-height: 30px;
+        color: $regular-color;
+        margin-bottom: 30px;
+    }
+
+    &__contacts--third {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+        
+    }
+
+    &__contacts-fb {
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        align-items: end;
+        &:hover {
+            svg,
+            p {
+                fill: $accent-color;
+                color: $accent-color;
+            }
+        }
+        
+        svg {
+            width: 38px;
+            height: 38px;
+            fill: $regular-color; 
+        }
+        
+    }
+   
+    &__contacts-fb--text {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        color: $regular-color;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+
+    &__contacts--input-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        background: $grey-color;
+        border-radius: 12px;
+
+        @media (min-width: $breakpoint-lg) {
+            flex: 0 0 50%;
+            margin-left: 30px;
+        }
+    }
+
+
+    &__contacts--input {
+        width: 100%;
+    }
+
+    &__contacts--input--first {
+    }
+
+    &__contacts--input--title {
+        @include title-text;
+        @include gradient-text;
+        margin-bottom: 30px;
+    }
+
+    &__contacts--input--second {
+    }
+
+    &__contacts--input--text {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $grey-color-text;
+        margin-bottom: 15px;
+    }
+}
+
+.input {
+
+    &__area--first input {
+        display: inline-block;
+        height: 56px;
+        width: 100%;
+        margin-bottom: 15px;
+        background: $white;
+        color: $grey-color-text;
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 15px;
+        border: 1px solid $white;
+        border-radius: 8px;
+
+        &:checked {
+            border: 1px solid $regular-color;
+        }
+    }
+
+    // &__area--first input:active {
+    //     background: $regular-color;
+    // }
+
+    &__area--second input,
+    &__area--second textarea {
+        display: inline-block;
+        height: 130px;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 30px;
+        background: $white;
+        color: $grey-color-text;
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 15px;
+        border: 1px solid $white;
+        border-radius: 8px;
+        resize: none;
+    }
+    &__area--third input {
+        border-radius: 8px;
+        height: 56px;
+        width: 100%;
+        margin-bottom: 15px;
+        background: $white;
+        color: $grey-color-text;
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 15px;
+        border: 1px solid $white;
+        border-radius: 8px;
+    }
+
+}
+
+.contact__button {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    & a:hover {
+        background: $hover-color;
+    }
+    & a:active {
+        background: $active-color;
+    }
+
+}
+
+.main__contacts--button {
+    display: inline-block; 
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #24a3ff;
+    padding: 18px 30px;
+    box-shadow: 0px 0px 20px rgba(36,163,255,.5);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+#form {
+    input, textarea {
+        transition: all 0.3s linear;
+        
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: 0 0 0 1px $regular-color;
+            background: rgba(84, 177, 243, 0.149);
+        }
+    }
+}
+
+#button-form {
+    &:focus {
+        border: none;
+        transform: translateY(-3px);
+        transition: all 0.1s linear;
+    }
+}
+
+
+
+.footer__main--contacts {
+    border: none;
+}
